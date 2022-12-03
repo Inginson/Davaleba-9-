@@ -185,6 +185,7 @@ header {
   .section1 {
     width: 100%;
   }
+  
 
   .cardbox {
     display: flex;
@@ -212,28 +213,32 @@ header {
   }
 
 
-.footer {
-  justify-content: center;
-  flex-direction: column;
-}
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.logofoot {
-  display: none;
-}
+  .logofoot {
+    display: none;
+  }
 
-.navfoot {
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .navfoot {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.contact,
-.location,
-.social {
-  margin: 0 auto;
-  margin-top: 1.2rem;
-  align-items: center;
-  text-align: center;
-}
+  .contact,
+  .location,
+  .social {
+    margin: 0 auto;
+    margin-top: 1.2rem;
+    align-items: center;
+    text-align: center;
 
+  }
+
+  .cards a {
+    padding: 2rem 2.1rem 1.1rem 15rem;
+  }
 }
