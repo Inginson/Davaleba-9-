@@ -1,7 +1,8 @@
 .container {
-  max-width: 1920;
+  max-width: 1920px;
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  margin: 0 auto;
 }
 
 header {
@@ -9,24 +10,30 @@ header {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
+
+.logohead {
+  padding: 3rem 0rem 3rem 4rem;
+}
+
 
 .navhead ul {
   display: flex;
-  margin-left: 30rem;
+  margin-left: 25rem;
   gap: 2rem;
   font-size: 1.25rem;
 }
 
 .search {
+  display: flex;
   margin-left: 3%;
 }
 
 
 .section1 {
   width: 80%;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   margin: 0 auto;
 }
 
@@ -92,11 +99,141 @@ header {
 .load {
   margin-top: 3.5rem;
   text-align: center;
-  border: solid pink;
+}
+
+.load a {
+  color: #707070;
+  font-weight: bold;
 }
 
 .article1 h2 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #707070;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 4.5rem;
+  background-color: #2E2E2E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logofoot {
+  width: 12.5rem;
+  padding: 3rem 0rem 3rem 8rem;
+}
+
+.navfoot {
+  display: flex;
+  color: white;
+}
+
+
+.contact {
+  margin-left: 20rem;
+}
+
+.location {
+  width: 300px;
+  margin-left: 17.6rem;
+  /* border: 1px solid red; */
+}
+
+.social img {
+  width: 2.1rem;
+}
+
+.social {
+  display: flex;
+  margin-left: 6.6rem;
+  margin-right: 8.75rem;
+  gap: 1.5rem;
+  /* border: 1px solid yellow; */
+}
+
+.contact h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact p {
+  font-size: 0.8rem;
+}
+
+.location h3 {
+  font-size: 1.2rem;
+}
+
+
+
+@media screen and (max-width: 478px) {
+  .navhead {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .search {
+    margin-left: 10rem;
+  }
+
+  .section1 {
+    width: 100%;
+  }
+
+  .cardbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards {
+    border: none;
+  }
+
+  .article1 h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .guitarists {
+    width: 20rem;
+  }
+
+  .none {
+    display: none;
+  }
+
+
+.footer {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logofoot {
+  display: none;
+}
+
+.navfoot {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact,
+.location,
+.social {
+  margin: 0 auto;
+  margin-top: 1.2rem;
+  align-items: center;
+  text-align: center;
+}
+
 }
